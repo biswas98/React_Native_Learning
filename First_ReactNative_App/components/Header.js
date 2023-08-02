@@ -1,26 +1,41 @@
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, ImageBackground } from 'react-native'
 import React from 'react'
 
 export default function () {
   return (
-    <View style={logoStyle.container}>
-        <Image source={require('../resources/logo.png')} style={logoStyle.logoRes}/>
-        <Text>Enter your details</Text>
+    <View style={headerStyle.container}>
+        <Image source={require('../resources/logo.png')} style={headerStyle.logoRes}/>
+        <Text style={headerStyle.heading}>Information</Text>
     </View>
   )
 }
 
-const logoStyle = StyleSheet.create({
+const headerStyle = StyleSheet.create({
     container: {
-        borderWidth: 1,
+        // borderWidth: 1,
+        padding: 20,
         width: '100%',
+        height: '44%',
         flexDirection: 'row',
         alignItems: 'center',
-        
+        justifyContent: 'space-between',
+        backgroundColor: '#61677A',
+
     },
 
     logoRes: {
-        width:70, 
-        height:70,
+        marginLeft: 50,
+        width:50, 
+        height:50,
+        borderRadius: 40,
+        borderWidth: 2,
+        borderColor: 'grey',
+        backgroundColor: '#fff'
+    },
+    heading: {
+        marginRight: '25%',
+        color: '#fff',
+        fontWeight: 'bold',
+        fontSize: 20,
     }
 });

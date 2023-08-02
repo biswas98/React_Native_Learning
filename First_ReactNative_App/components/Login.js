@@ -29,7 +29,7 @@ export default function Login() {
   return (
     <View style={style.container}>
       <View style={style.SubContent}>
-        <Text>Name: </Text>
+        <Text style={{fontSize: 20,fontWeight:'bold',color: '#435B66'}}>Name: </Text>
 
         <TextInput
           style={style.input}
@@ -40,7 +40,7 @@ export default function Login() {
       </View>
 
       <View style={style.SubContent}>
-        <Text>Age: </Text>
+        <Text style={{fontSize: 20,fontWeight:'bold',color: '#435B66'}}>Age: </Text>
         <TextInput
           style={style.input}
           placeholder="enter your age"
@@ -52,7 +52,7 @@ export default function Login() {
 
       <View>
         <TouchableOpacity style={style.btn} onPress={myAlert}>
-          <Text>Click</Text>
+          <Text style={{fontSize: 16,fontWeight:'bold',color: '#435B66'}}>Click</Text>
         </TouchableOpacity>
       </View>
 
@@ -63,10 +63,12 @@ export default function Login() {
 
 const style = StyleSheet.create({
   container: {
-    borderWidth: 1,
     padding: 50,
     flexDirection: "column",
     alignItems: "center",
+	backgroundColor: '#D8D9DA',
+	borderRadius: 40,
+	elevation: 30
   },
 
   SubContent: {
@@ -81,14 +83,17 @@ const style = StyleSheet.create({
     padding: 5,
     width: 200,
     borderWidth: 1,
-    borderColor: "red",
+    borderColor: 'grey',
+	backgroundColor: '#fff'
   },
 
   btn: {
     width: 100,
-    borderWidth: 1,
+    // borderWidth: 1,
     padding: 7,
     borderRadius: 25,
     alignItems: "center",
+	backgroundColor: '#FFF6E0',
+
   },
 });
