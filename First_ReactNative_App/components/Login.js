@@ -1,7 +1,11 @@
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from "react-native";
-import React from "react";
+import React, {useState} from "react";
 
 export default function Login() {
+
+    // const [value, setValue] = useState([]);
+
+
     return (
         <View style={style.container}>
             <View style={style.SubContent}>
@@ -19,7 +23,9 @@ export default function Login() {
                     <Text>Click</Text>
                 </TouchableOpacity>
             </View>
+            
         </View>
+        
     );
 }
 
