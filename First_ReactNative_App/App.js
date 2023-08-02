@@ -4,19 +4,15 @@ import { StyleSheet, Text, View, Button } from "react-native";
 import Login from './components/Login';
 import TouchMe from './components/TouchMe';
 import Test from './components/Test';
+import Header from './components/Header';
 
 
 export default function App() {
 	return (
 		<View style={styles.container}>
 
-			<Login />
-
-			{/* <TouchMe /> */}
-
-			{/* <Test/> */}
-
-	
+			{/* <Login /> */}
+			<Header />
 		</View>
 	);
 }
