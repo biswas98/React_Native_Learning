@@ -19,7 +19,7 @@ export default function Login() {
     Alert.alert(
       "User Credentials",
       "Name: " + valueTextInput1 + "\n" + "Age: " + valueTextInput2,
-      [{ text: "go back" }]
+      [{ text: "Go Back" }]
     );
 	setValueTextInput1('');
 	setValueTextInput2('');
