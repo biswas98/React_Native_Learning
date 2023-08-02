@@ -1,9 +1,12 @@
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from "react-native";
 import React, {useState} from "react";
 
+import AlertComponent from "./AlertComponent";
+
 export default function Login() {
 
-    // const [value, setValue] = useState([]);
+    const [valueTextInput1, setValueTextInput1] = useState([]);
+    const [valueTextInput2, setValueTextInput2] = useState([]);
 
 
     return (
@@ -18,11 +21,8 @@ export default function Login() {
                 <TextInput style={style.input} />
             </View>
 
-            <View>
-                <TouchableOpacity style= {style.btn}>
-                    <Text>Click</Text>
-                </TouchableOpacity>
-            </View>
+            <AlertComponent />
+            
             
         </View>
         
