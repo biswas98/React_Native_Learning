@@ -24,14 +24,15 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+	height: '100%',
     backgroundColor: "#fff",
 	flexDirection: 'column',
     alignItems: "center",
-	fontFamily: ''
+	backgroundColor: '#F7F1E5'
   },
 
   head: {
-	marginBottom: 40,
+	marginBottom: 10,
   },
   content: {
 	width: '90%'

@@ -94,6 +94,7 @@ const style = StyleSheet.create({
     borderRadius: 25,
     alignItems: "center",
 	backgroundColor: '#FFF6E0',
+	elevation: 5,
 
   },
 });
