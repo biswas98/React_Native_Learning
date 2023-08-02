@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button } from "react-native";
 
 import Login from './components/Login';
 import TouchMe from './components/TouchMe';
-// import Test from './components/Test';
+import Test from './components/Test';
 
 
 export default function App() {
