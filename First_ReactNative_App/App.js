@@ -2,9 +2,9 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
 
 import Login from "./components/Login";
-import TouchMe from "./components/TouchMe";
-// import Test from './components/Test';
 import Header from "./components/Header";
+// import TouchMe from "./components/TouchMe";
+// import Test from './components/Test';
 
 export default function App() {
   return (

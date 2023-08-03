@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 
-import AlertComponent from "./AlertComponent";
+// import AlertComponent from "./AlertComponent";
 
 export default function Login() {
   const [valueTextInput1, setValueTextInput1] = useState("");
