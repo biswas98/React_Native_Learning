@@ -1,46 +1,26 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { View, Text } from 'react-native'
+import React from 'react'
 
-import Login from "./components/Login";
-import Header from "./components/Header";
-import Dashboard from "./components/Dashboard";
-// import TouchMe from "./components/TouchMe";
-// import Test from './components/Test';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function App() {
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+
+const Stack = createNativeStackNavigator();
+
+export default function AppStack() {
   return (
-    <View style={styles.container}>
+    <NavigationContainer>
 
-      {/* <View style={styles.head} >
-        <Header />
-      </View> */}
+      <Stack.Navigator>
 
-      {/* <View style={styles.content}>
-        <Login />
-      </View> */}
+        <Stack.Screen name='Login' component={Login} />
+        <Stack.Screen name='Dashboard' component={Dashboard} />
 
+      </Stack.Navigator>
 
-      <Dashboard />
-
-
-    </View>
-  );
+    </NavigationContainer>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    height: '100%',
-    flexDirection: 'column',
-    alignItems: "center",
-    backgroundColor: '#F7F1E5'
-  },
-
-  head: {
-    marginBottom: 10,
-  },
-  content: {
-    width: '90%'
-  },
-  
-
-});
