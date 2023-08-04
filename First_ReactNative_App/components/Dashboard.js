@@ -9,12 +9,16 @@ import Header from './Login'
 
 
 export default function Dashboard(props) {
+
+    const { name , age } = props.route.params;
+
     return (
         <View style={style.container}>
-            <Text style={style.textContainer}> You are in the Dashboard screen</Text>
+            <Text style={style.textContainer}>Name: {name}</Text>
+            <Text style={style.textContainer}>Age: {age}</Text>
             <Button
+                style={style.btn}
                 title='Login'
-                color='grey'
                 // onPress={()=> props.navigation.navigate('Login')}
                 onPress={()=> props.navigation.goBack()} 
             />
@@ -25,7 +29,10 @@ export default function Dashboard(props) {
 
 const style = StyleSheet.create({
     container: {
-        marginTop: 200,
+        height:'60%',
+        margin: 20,
+        borderWidth: 1,
+        
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -36,5 +43,8 @@ const style = StyleSheet.create({
         borderColor: 'green',
         textAlign: 'center',
         fontSize: 20,
+    },
+    btn: {
+
     }
 });

@@ -22,7 +22,8 @@ export default function Login(props) {
             "Name: " + valueTextInput1 + "\n" + "Age: " + valueTextInput2,
             [{
                 text: "Dashboard",
-                onPress: () => props.navigation.navigate('Dashboard')
+                onPress: () => props.navigation.navigate('Dashboard',
+                { name: valueTextInput1, age: valueTextInput2 })
             }]
         );
         setValueTextInput1('');
