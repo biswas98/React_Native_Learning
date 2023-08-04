@@ -15,7 +15,8 @@ export default function Dashboard(props) {
             <Button
                 title='Login'
                 color='grey'
-                onPress={()=> props.navigation.navigate('Login')}
+                // onPress={()=> props.navigation.navigate('Login')}
+                onPress={()=> props.navigation.goBack()} 
             />
         </View>
     )
