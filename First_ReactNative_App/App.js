@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 export default function AppStack() {
   
   // Platform API returns about which Device the code is runnin on.
-  console.log(Platform.OS);
+  // console.log(Platform.OS);
 
   return (
     <NavigationContainer>
