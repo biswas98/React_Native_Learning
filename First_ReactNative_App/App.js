@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, Platform } from 'react-native'
 import React from 'react'
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -10,6 +10,8 @@ import Dashboard from './components/Dashboard';
 const Stack = createNativeStackNavigator();
 
 export default function AppStack() {
+  
+  console.log(Platform.OS);
   return (
     <NavigationContainer>
 
