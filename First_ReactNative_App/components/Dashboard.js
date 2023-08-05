@@ -32,6 +32,7 @@ export default function Dashboard(props) {
 
 const style = StyleSheet.create({
     container: {
+        backgroundColor: '#DBC4F0',
         height: '60%',
         margin: 20,
         marginTop: 100,
