@@ -48,7 +48,6 @@ const style = StyleSheet.create({
         marginBottom: 50,
         textAlign: 'center',
         color: '#461959', // #322653
-    
     },
 
     btn: {
