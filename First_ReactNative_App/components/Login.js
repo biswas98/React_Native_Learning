@@ -68,11 +68,13 @@ export default function Login(props) {
 
 const style = StyleSheet.create({
     container: {
+        margin: 20,
         marginTop: 200,
         padding: 50,
         flexDirection: "column",
         alignItems: "center",
         backgroundColor: '#D8D9DA',
+        borderWidth: 1,
         borderRadius: 40,
         elevation: 30
     },
