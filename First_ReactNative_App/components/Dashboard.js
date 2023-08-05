@@ -5,7 +5,7 @@ import React from 'react'
 // import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-import Header from './Login'
+// import Header from './Login'
 
 
 export default function Dashboard(props) {
