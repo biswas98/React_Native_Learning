@@ -16,20 +16,29 @@ export default function Login(props) {
   const [valueTextInput2, setValueTextInput2] = useState("");
 
   const myAlert = () => {
-    Alert.alert(
-      "User Credentials",
-      "Name: " + valueTextInput1 + "\n" + "Age: " + valueTextInput2,
-      [
-        {
-          text: "Dashboard",
-          onPress: () =>
-            props.navigation.navigate("Dashboard", {
-              name: valueTextInput1,
-              age: valueTextInput2,
-            }),
-        },
-      ]
-    );
+    if (valueTextInput1.length > 3 && valueTextInput2 > 10) {
+      Alert.alert(
+        "User Credentials",
+        "Name: " + valueTextInput1 + "\n" + "Age: " + valueTextInput2,
+        [
+          {
+            text: "Dashboard",
+            onPress: () =>
+              props.navigation.navigate("Dashboard", {
+                name: valueTextInput1,
+                age: valueTextInput2,
+              }),
+          },
+        ]
+      );
+    }
+    else{
+        Alert.alert(
+            'Wrong',
+            'Please enter Name of more than 3 characters or\nAge greater than 10',
+            [{text: 'Go Back'}]
+            );
+    }
     setValueTextInput1("");
     setValueTextInput2("");
   };
