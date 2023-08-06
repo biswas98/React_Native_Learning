@@ -9,7 +9,6 @@ import {
 import React, { useState } from "react";
 
 import Dashboard from "../Dashboard/Dashboard";
-// import AlertComponent from "./AlertComponent";
 
 export default function Login(props) {
   const [valueTextInput1, setValueTextInput1] = useState("");
