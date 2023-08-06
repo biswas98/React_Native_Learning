@@ -8,6 +8,8 @@ import {
 } from "react-native";
 import React from "react";
 
+// import style from './DashboardStyle';
+
 export default function Dashboard(props) {
   const { name, age } = props.route.params;
 
