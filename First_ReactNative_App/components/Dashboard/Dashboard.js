@@ -8,9 +8,6 @@ import {
 } from "react-native";
 import React from "react";
 
-// import { NavigationContainer } from '@react-navigation/native';
-// import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 export default function Dashboard(props) {
   const { name, age } = props.route.params;
 
