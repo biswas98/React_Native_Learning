@@ -4,8 +4,8 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
+import Login from './components/Login/Login';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const Stack = createNativeStackNavigator();
 
