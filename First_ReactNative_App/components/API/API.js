@@ -28,6 +28,7 @@ export default function ApiTest() {
         Data ? <View style={style.container}>
           <Text style={{ fontSize: 30, textDecorationLine: 'underline' }}>Facts About Cats</Text>
           { 
+            // redenering each index using map()
             Data.map((item, index ) => {
               console.log(item);
               return <Text style={style.textStyle}>{item?.text}</Text>
