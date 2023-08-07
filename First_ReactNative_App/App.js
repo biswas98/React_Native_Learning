@@ -9,7 +9,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 
 const Stack = createNativeStackNavigator();
 
-export default function AppStack() {
+export default function App() { 
   // Platform API returns about which Device the code is runnin on.
   // console.log(Platform.OS);
 
