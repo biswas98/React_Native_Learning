@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import React from "react";
 
+import API from '../API/API'
 // import style from './DashboardStyle';
 
 export default function Dashboard(props) {
@@ -24,6 +25,15 @@ export default function Dashboard(props) {
       >
         <Text style={{ fontSize: 25, fontWeight: "bold", color: "#fff" }}>
           Go back to login screen
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={style.btn}
+        onPress={() => props.navigation.navigate('API')}
+      >
+        <Text style={{ fontSize: 25, fontWeight: "bold", color: "#fff" }}>
+          API Test Screen
         </Text>
       </TouchableOpacity>
     </View>
@@ -51,6 +61,7 @@ const style = StyleSheet.create({
   },
 
   btn: {
+    margin: 20,
     padding: 20,
     borderRadius: 50,
     backgroundColor: "#8062D6",

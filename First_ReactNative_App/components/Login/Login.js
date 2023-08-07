@@ -9,6 +9,7 @@ import {
 import React, { useState } from "react";
 
 import Dashboard from "../Dashboard/Dashboard";
+// import API from "../API/API";
 
 export default function Login(props) {
   const [valueTextInput1, setValueTextInput1] = useState("");
@@ -66,7 +67,6 @@ export default function Login(props) {
           placeholder="enter your age"
           onChangeText={(text) => setValueTextInput2(text)}
           value={valueTextInput2}
-          //   keyboardType='numeric'
         />
       </View>
 
@@ -78,7 +78,15 @@ export default function Login(props) {
         </TouchableOpacity>
       </View>
 
-      {/* <AlertComponent /> */}
+      {/* <TouchableOpacity
+        style={style.touchBtn}
+        onPress={() => props.navigation.navigate('API')}
+      >
+        <Text style={{ fontSize: 25, fontWeight: "bold", color: "#fff" }}>
+          API Test Screen
+        </Text>
+      </TouchableOpacity>
+     */}
     </View>
   );
 }
@@ -121,4 +129,12 @@ const style = StyleSheet.create({
     backgroundColor: "#FFF6E0",
     elevation: 5,
   },
+  
+  touchBtn: {
+    margin: 20,
+    padding: 10,
+    borderWidth: 1,
+    backgroundColor: 'lightpink',
+    borderRadius:  40,
+  }
 });
