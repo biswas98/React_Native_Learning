@@ -5,14 +5,13 @@ export default function ApiTest() {
 
   const [Data, setData] = useState([]);
 
-
+  // fetch API
   const getAPIResponse = async () => {
     const url = 'https://cat-fact.herokuapp.com/facts';
 
     let response = await fetch(url);
     response = await response.json();
     // console.log(response);
-
     setData(response);
   }
 
@@ -28,7 +27,7 @@ export default function ApiTest() {
       {
         Data ? <View style={style.container}>
           <Text style={{ fontSize: 30, textDecorationLine: 'underline' }}>Facts About Cats</Text>
-          {
+          { 
             Data.map((item, index ) => {
               console.log(item);
               return <Text style={style.textStyle}>{item?.text}</Text>
